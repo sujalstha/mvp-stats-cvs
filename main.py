@@ -20,5 +20,6 @@ for tr in trs:
     row = [td.text.replace('\n', '') for td in tds]
     df = df.append(pd.Series(row, index=columns), ignore_index=True)
 
+
 ### Uncomment the code on line 24 and run it ###
 # df.to_csv('nba mvp stats.csv', index=False)

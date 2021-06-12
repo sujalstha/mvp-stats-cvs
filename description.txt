@@ -1,0 +1,27 @@
+# Created 6/11/2021
+# mvp-status-cvs by [Sujal Shrestha]
+
+
+(1-3 line) importing modules/libraries
+
+(5 line) URL takes a value of  a string as the website link
+
+(6 line) response takes the value of request modules, requesting and connecting to the link of the website
+
+(7 line) soup takes the value of multiple strings of the website html code
+
+(9 line) columns takes the value of a list, containing multiple of strings: used later as the first row of the cvs file 
+
+(13 line) df takes the value of a data frame using the pandas module and setting the columns as the variable(columns)
+
+(15-16 line) table takes the value of multiple strings under the keyword ('table') and ('class': 'sortable', 'id': 'players') from the variable(soup)
+	  trs takes the value of multiple strings under the keyword ('tr') from the variable(table)
+
+(18-21 line) a for loop iterating through each string contained in the variable(trs)
+	  	tds takes the value of multiple strings under the keyword 'td' from the variable(tr)
+	  	row takes the value of a list containing multiple only TEXT[not  multiple strings] under the keyword 'td' from the variable(tds)
+	  	df rewrites its vaule and contains a data frame with all the text needed to fill out the required amount of  the number of columns
+
+  
+# uncomment this code and run the program to its potential =>  (24 line) the variable(df)'s value is converted into a .cvs file  
+
